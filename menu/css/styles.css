@@ -1,0 +1,220 @@
+/* General Reset */
+body {
+    margin: 0;
+    font-family: 'Georgia', Times New Roman, Times, serif;
+    background-color: #fffac7;
+    color: #000;
+    height: 100%;
+}
+
+h1 {
+    font-family: "Playfair Display", serif;
+    font-size: 24pt;
+}
+
+h2 {
+    font-family: 'Georgia', Times New Roman, Times, serif;
+    font-size: 20pt;
+}
+
+/* Header */
+header {
+    display: flex;
+    align-items: center; /* Vertically aligns the items */
+    padding: 10px 0;
+    background-color: #1c3042;
+    border: 2px solid #e63946;
+}
+
+#logo {
+    margin: 0 auto; /* Centers the logo in the remaining space */
+    width: 150px;
+    height: auto;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #1c3042;
+    border: 2px solid #e63946;
+}
+
+.menubar {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menubar li {
+    margin: 0 15px;
+}
+
+.menubar a {
+    color: #fff6da;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    display: inline-block;
+}
+
+.menubar a.active, .menubar a:hover, .menubar a:focus {
+    background-color: #e63946;
+    color: #ffd17c;
+}
+
+/* Main Content */
+.menu-home {
+    padding: 20px;
+    text-align: center;
+    margin: auto;
+}
+
+.menu-home div {
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.diet {
+    border: 2px solid #1c3042;
+    color: #ffd17c;
+    background-color: #e63946;
+    max-width: 400px;
+}
+
+.something-specific {
+    border: 2px solid #1c3042;
+    background-color: #ffd17c;
+    color: #e63946;
+    max-width: 400px;
+}
+
+.food {
+    background-color: #ffd17c;
+    border-radius: 10px;
+    width: 70%;
+    margin: auto;
+}
+
+section {
+    margin: 10px;
+    padding: 15px;
+}
+
+section h1 {
+    color: #e63946;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 8px 0;
+    font-size: 18px;
+}
+
+/* Logo at Bottom */
+main img {
+    width: 100px;
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 14px;
+    background-color: #1c3042;
+    color: #ffd17c;
+    border: 2px solid #e63946;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    margin: auto;
+    margin-top: 20px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+button:hover, button:focus, button:active {
+    background-color: #ffd17c;
+    color: #1c3042;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #e63946;
+    font-size: 12px;
+    color: #fff6da;
+}
+
+@media (min-width: 768px) {
+
+    nav {
+        width: 20%;
+        max-width: 130px;
+        height: 250vh;
+        background-color: #1c3042;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .menubar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .menubar li {
+        margin: 10px 0;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    button {
+        margin-bottom: 10px;
+}
+
+    .button {
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+        margin: auto;
+    }
+
+    .menu-home {
+        margin-top: 0;
+        display: flex;
+        gap: 10px;
+    }
+
+    .food {
+        gap: 20px; /* Spacing between columns */
+        display: flex;
+        justify-content: center;
+        width: 100%; /* Full width for better alignment */
+    }
+
+    .food section {
+        margin: 0; /* Remove extra margins inside sections */
+        padding: 15px; /* Add consistent padding */
+    }
+
+    .food img {
+        width: 50%;
+    }
+}

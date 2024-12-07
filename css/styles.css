@@ -1,0 +1,298 @@
+/* General Reset */
+body {
+    margin: 0;
+    font-family: 'Georgia', Times New Roman, Times, serif;
+    background-color: #ffd17c;
+    color: #000;
+    height: 100%;
+}
+
+h1 {
+    font-family: "Playfair Display", serif;
+    font-size: 24pt;
+    color: #1c3042;
+}
+
+h2 {
+    font-family: 'Georgia', Times New Roman, Times, serif;
+    font-size: 20pt;
+}
+
+/* Header */
+header {
+    display: flex;
+    align-items: center; /* Vertically aligns the items */
+    padding: 10px 0;
+    background-color: #e63946;
+    border: 2px solid #fffac7;
+}
+
+#logo {
+    margin: 0 auto; /* Centers the logo in the remaining space */
+    width: 150px;
+    height: auto;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #e63946;
+    border: 2px solid #fffac7;
+}
+
+.menubar {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menubar li {
+    margin: 0 15px;
+}
+
+.menubar a {
+    color: #fff6da;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    display: inline-block;
+}
+
+.menubar a.active, a:hover, a:focus {
+    background-color: #fffac7;
+    color: #e63946;
+}
+
+/* Main Content */
+main {
+    text-align: center;
+    padding: 20px;
+    min-height: calc(100vh - 140px); /* Accounts for header and footer height */
+    box-sizing: border-box;
+}
+
+main h1 {
+    margin-bottom: 20px;
+}
+
+main img {
+    width: 90%;
+    max-width: 600px;
+    margin: 20px 0;
+    border: 2px solid #e63946;
+    border-radius: 10px;
+}
+
+/* Store List */
+.stores {
+    background-color: #fff6da;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 600px;
+    border: 2px solid #1c3042;
+    box-sizing: border-box;
+}
+
+main img, main div {
+    height: auto;
+}
+
+.stores h1 {
+    margin-bottom: 0;
+    color: #e63946;
+}
+
+main div ul {
+    list-style: none;
+    padding: 0;
+    display: inline-block;
+}
+
+main div ul li {
+    margin: 5px 0;
+    text-align: center;
+}
+
+.bio {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #e63946;
+    font-size: 12px;
+    color: #fff6da;
+}
+
+.home {
+    flex: 1;
+}
+
+.contact {
+    margin: auto;
+    margin-top: 0;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers vertically */
+    align-items: center;
+    padding: 20px;
+    background-color: #fff6da;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 600px;
+    margin: auto;
+    border: 2px solid #1c3042;
+}
+
+.form form {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 15px; /* Spacing between grid items */
+    width: 80%;
+    margin: auto
+}
+
+.form label {
+    font-weight: bold;
+    color: #1c3042;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.form input, 
+.form textarea, 
+.form button {
+    padding: 10px;
+    border: 2px solid #e63946;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.fname {
+    grid-column: span 2;
+}
+
+.lname {
+    grid-column: span 2;
+}
+
+.email {
+    grid-column: span 4;
+}
+
+.phone {
+    grid-column: span 4;
+}
+
+fieldset {
+    grid-column: span 4; /* Ensure the fieldset spans the full width of the form */
+    display: flex; /* Enable flexbox */
+    justify-content: center; /* Align items to the start */
+    align-items: center; /* Vertically align items */
+    gap: 15px; /* Add space between the items */
+    padding: 20px;
+    margin: 0;
+}
+
+fieldset label {
+    gap: 5px; /* Space between checkbox and label text */
+    color: #1c3042; /* Match text color */
+}
+
+.title {
+    grid-column: span 4;
+}
+
+.message {
+    grid-column: span 4;
+}
+
+.message input {
+    height: 100px;
+}
+
+.contact form button {
+    background-color: #e63946;
+    color: #ffd17c;
+    border: 2px solid #ffd17c;
+    font-weight: bold;
+    cursor: pointer;
+    grid-column: 2 / span 2; /* Button spans across both columns */
+    text-align: center;
+}
+
+.contact form button:hover, button:focus, button:active {
+    background-color: #ffd17c;
+    color: #e63946;
+    border: 2px solid #e63946;
+}
+
+legend {
+    font-weight: bold;
+    color: #1c3042;
+}
+
+.contact h2 {
+    color: #1c3042;
+}
+
+@media (min-width: 768px) {
+
+    nav {
+        width: 20%;
+        max-width: 130px;
+        height: 120vh;
+        background-color: #e63946;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .menubar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .menubar li {
+        margin: 10px 0;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .home {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto 1fr;
+        justify-items: center;
+    }
+
+    .tagline {
+        grid-column: 1 / span 2;
+    }
+
+    .stores {
+        height: 30vh;
+        width: auto;
+        min-height: fit-content;
+    }
+
+    .home img {
+        height: 30vh;
+        width: auto;
+    }
+
+}
